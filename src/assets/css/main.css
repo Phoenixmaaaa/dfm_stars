@@ -1,0 +1,8 @@
+body {
+  background: url("@/assets/images/stars-background.jpg");
+  background-size: cover;
+}
+@font-face {
+  font-family: 'StarJedi';
+  src: url('@/assets/fonts/star_jedi_font/Starjedi.ttf') format('truetype');
+}
