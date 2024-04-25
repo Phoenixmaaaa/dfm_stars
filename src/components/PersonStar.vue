@@ -77,7 +77,6 @@ export default {
 
 <style lang="scss" scoped>
 .person-star {
-  background-color: "red";
   &__star-image {
     animation: fadeIn 2s ease;
 
