@@ -1,43 +1,23 @@
 [
   {
     "avatar": "https://sun9-50.userapi.com/impg/LWCFJv7fs-ohTqeBsUChIXcwMXQBQ2SSy_50rg/0wUtj__z_0k.jpg?size=2560x1707&quality=95&sign=89f3913bad586384925100500c7b2003&type=album",
-    "name": "Михаил Николаевич Протосевич",
+    "name": "Михаил Николаевич",
     "description": "Организатор ЧГК. Ставит долги весь год, чтобы нам было о чем шутить! Всегда поддержит любой движ, ежегодный звезда синем у разных курсов. С юмором и легкостью объясняет диффуры и матанализ."
   },
   {
-    "name": "Леонид Столяр, 4 ПМиИ ",
+    "name": "Леонид Столяр, 4 ПМ",
     "avatar": "https://sun9-45.userapi.com/impg/4Et97I_J9qcSCmEF9kMgkaUOiBN1YU4p56Pg6g/8Htnfa0x27Q.jpg?size=1620x2160&quality=95&sign=c2f81a2fb607bdca0eb41037c5032645&type=album",
     "description": "Прилетел в Калининград в 2020 году. До этого жил по соседству с сибирскими медведями. Рост высокий. Характер сложный. Не женат"
   },
   {
-    "name": "Артём Алексеев 4ПМ ",
+    "name": "Артём Алексеев 4ПМ",
     "avatar": "https://downloader.disk.yandex.ru/preview/3ebc3d12b1a035f3ed3b48da9aaec815c4d4675a5f95615d858a86200d0561a3/662aa7fa/DtS0zNqSPBuXTR1hOVwXqMXimzAOuj6-QRNkRZAyMMN-44Dk_5PyABnoIZqN1pnTP5FG332KklQHnfAcWFqwCw%3D%3D?uid=0&filename=%D0%AF%D0%94%D0%A4%D0%9C1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
     "description": "Рекордсмен по комиссиям среди оставшихся в живых 4 математиков, гитара всех 4 курсов, на нижках и косах появляется чаще, чем на парах"
   },
   {
-    "name": "Дарья Сурикова 3ПМ ",
+    "name": "Дарья Сурикова 3ПМ",
     "avatar": "https://sun9-8.userapi.com/impg/8bGV2jh8bpvMwVvH8grGM-cb5CIp99qt4JPOvg/9Bsou29aB98.jpg?size=960x1280&quality=96&sign=a7b764e5f69bd02ec0335006fb07ad7e&type=album",
     "description": "Вероятно, единственная здесь 3 математик) Рада наконец-то поучаствовать в ДФМ, за что спасибо всему 4М"
-  },
-  {
-    "name": "Екатерина Петровна",
-    "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d2/3fafa2fe2653/EP.jpg?extra=4OBanu9ZFxiKxiy7iPJ22WsXn7H109pYV68kEEE3ATQKOvWEtXllpObN-OmBW_Ho5KmLG19bbRpWmBo-38gx_5zAet6ZPxJtxeRIDpaGQFn6GKLq4NBELBS34S6el641kvERJeTYTUE3u7Dmt6dd2dM",
-    "description": "Мама всея физмата, белая королева страны ДФМ. Легко превращает студентов в зайчиков, всегда угостит вкусным чаем и поможет в решении любого вопроса."
-  },
-  {
-    "name": "Дмитрий Александрович",
-    "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d45/03b871ea996a/Savkin.jpg?extra=kYan38WgaslNe_YkRce1suYphB0evAHOBe-jtkXJTXMD7e1bVNsKBNgen012xY8xLGC01ctD-LBWOjHfGkwyz5ZrrSK4E54Iz_rn-QH9gr5zI0j2i1_JQK2CXWUKqR5EvvhHJZjxAvdMwovGEKGq6BA",
-    "description": "Гроза ночи физмата! Сторожит порядок с помощью доброго слова и биты. Сенсей в области баз данных и анекдотов, МС по принятию комиссионных пересдач."
-  },
-  {
-    "name": "Артём Валерианович",
-    "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d30/34271b217ef1/Yurov.jpg?extra=6KnfqGeQlGZnTxLjSatM8cHD18JHwLfAO1iDWryA-jjLnKgE5kIVEdy0-obfFGf05DeDyRQKiIFtwkEA66aWjAPgYL7njj3yH2fjeOcLNJyJ9DbNdXR7LMCrIvceXJa2Q_xB81XdjTyArFAH3h73KnE",
-    "description": "Руководитель всех звездочек ОНК «Институт высоких технологий». Рассказывает самые интересные лекции про космос и прекрасно поёт!"
-  },
-  {
-    "name": "Леонид Викторович",
-    "avatar": "",
-    "description": "Быть или не быть? Преподаватель или актер? И то, и другое, и еще музыкант! Обоятельный и талантливый. С одинаковой легостью объясняет численные методы и читает стихи А.С.Пушкина"
   },
   {
     "name": "Владимир Николаевич",
@@ -60,31 +40,6 @@
     "description": "Спокойный, уровновешенный и благородный. Ежегодно принимает участие в в ДФМ. Организатор ЧГК."
   },
   {
-    "name": "Кирилл Богачев 4ПМ ",
-    "avatar": "https://sun9-37.userapi.com/impg/vM-jQADwi0X_sFwaeRbOyk_zrJYyn__9n9bF6g/P7Ge6Da8HXc.jpg?size=1240x1241&quality=95&sign=39acbf7c9c67082b8e65fe97e6bbd8ad&type=album",
-    "description": "Любитель 'по пиву' после физры, ярый фанат нижек и кос (но не добираться до нее). Буду скучать по всему этому и людям, которые меня окружали "
-  },
-  {
-      "avatar": "https://sun9-50.userapi.com/impg/LWCFJv7fs-ohTqeBsUChIXcwMXQBQ2SSy_50rg/0wUtj__z_0k.jpg?size=2560x1707&quality=95&sign=89f3913bad586384925100500c7b2003&type=album",
-      "name": "Михаил Николаевич Протосевич",
-      "description": "Организатор ЧГК. Ставит долги весь год, чтобы нам было о чем шутить! Всегда поддержит любой движ, ежегодный звезда синем у разных курсов. С юмором и легкостью объясняет диффуры и матанализ."
-  },
-  {
-      "name": "Леонид Столяр, 4 ПМиИ ",
-      "avatar": "https://sun9-45.userapi.com/impg/4Et97I_J9qcSCmEF9kMgkaUOiBN1YU4p56Pg6g/8Htnfa0x27Q.jpg?size=1620x2160&quality=95&sign=c2f81a2fb607bdca0eb41037c5032645&type=album",
-      "description": "Прилетел в Калининград в 2020 году. До этого жил по соседству с сибирскими медведями. Рост высокий. Характер сложный. Не женат"
-  },
-  {
-      "name": "Артём Алексеев 4ПМ ",
-      "avatar": "https://downloader.disk.yandex.ru/preview/3ebc3d12b1a035f3ed3b48da9aaec815c4d4675a5f95615d858a86200d0561a3/662aa7fa/DtS0zNqSPBuXTR1hOVwXqMXimzAOuj6-QRNkRZAyMMN-44Dk_5PyABnoIZqN1pnTP5FG332KklQHnfAcWFqwCw%3D%3D?uid=0&filename=%D0%AF%D0%94%D0%A4%D0%9C1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
-      "description": "Рекордсмен по комиссиям среди оставшихся в живых 4 математиков, гитара всех 4 курсов, на нижках и косах появляется чаще, чем на парах"
-  },
-  {
-      "name": "Дарья Сурикова 3ПМ ",
-      "avatar": "https://sun9-8.userapi.com/impg/8bGV2jh8bpvMwVvH8grGM-cb5CIp99qt4JPOvg/9Bsou29aB98.jpg?size=960x1280&quality=96&sign=a7b764e5f69bd02ec0335006fb07ad7e&type=album",
-      "description": "Вероятно, единственная здесь 3 математик) Рада наконец-то поучаствовать в ДФМ, за что спасибо всему 4М"
-  },
-  {
       "name": "Екатерина Петровна",
       "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d2/3fafa2fe2653/EP.jpg?extra=4OBanu9ZFxiKxiy7iPJ22WsXn7H109pYV68kEEE3ATQKOvWEtXllpObN-OmBW_Ho5KmLG19bbRpWmBo-38gx_5zAet6ZPxJtxeRIDpaGQFn6GKLq4NBELBS34S6el641kvERJeTYTUE3u7Dmt6dd2dM",
       "description": "Мама всея физмата, белая королева страны ДФМ. Легко превращает студентов в зайчиков, всегда угостит вкусным чаем и поможет в решении любого вопроса."
@@ -103,26 +58,6 @@
       "name": "Леонид Викторович",
       "avatar": "https://sun9-10.userapi.com/impg/l5_Uh2FfLLVcMJfmYKq13P6rct4CUiT-MBWpAg/PzxWYQD7jAA.jpg?size=1180x1180&quality=95&sign=050271976a6b21583d9362a4cc62aa3f&type=album",
       "description": "Быть или не быть? Преподаватель или актер? И то, и другое, и еще музыкант! Обоятельный и талантливый. С одинаковой легостью объясняет численные методы и читает стихи А.С.Пушкина"
-  },
-  {
-      "name": "Владимир Николаевич",
-      "avatar": "https://psv4.userapi.com/c909328/u249034701/docs/d57/e76a2f3d9122/Khudenko.jpg?extra=xJmUYaRJNxIxwOrw-6osTjuL-BSuXQgSoxf6REIfTz56zaATmCxB75fjV9CUJQ6tWpCDgBH-1VG89eviCUhuhkdAG3hHGGYWZaM49AQ6yo5JTC_fGlZCYyvsZQgrqnVOJP-Cyav_U4-RV5uiWMS7A18",
-      "description": "Почетный, уважаемый, многолетний член жюри ДФМ.Проводник в мир математического анализа, его бессменный помощник в этом нелегком деле - Кот Саймон. Показывая в переревых синемы на лекциях помогает пережить трудное время от ДФМа до ДФМа."
-  },
-  {
-      "name": "Михаил Владимирович",
-      "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d22/6daed9366fc2/Tarachkov.jpg?extra=KuFAsJ5IOs3Xx354x_ODmBna9zrU59uZNVoQDkWe1mfO_aezUKH8sCzubHmjv_s1orwQ2I5laoQCEUairV8An0XkGzMbDro6Ng2IIAXIqeuYIqYS1znogzKp64TQ4iBXRXmvkj8NJ9LwDmA1jvY3_RM",
-      "description": "Золотые руки роботехники. Душа физмата. Мудрый наставник, любимец всех студентов. Серебряный призер велосипедных гонок «‎Стремительный и неумолимый»‎."
-  },
-  {
-      "name": "Даня Ягубков 4ПМ",
-      "avatar": "https://psv4.userapi.com/c909518/u168855520/docs/d31/ab8e90c0aff9/image_1.png?extra=aMha0cSyOhF4N3GWhehO81ggvazLxJckYg3ic9h3_sE8oPJhoH9O9HkTevQkEEAxpMLXr8J1_lYtmhfptBNC7Jrf4mcFrv1pj4eN_s8-vfPhO4I204U8O3J-D6lCgTXD9TZYJTvtTZDG2eitJNj3QAk",
-      "description": "Гений. Шизик. Мышь. Кодер на коленке."
-  },
-  {
-      "name": "Артур Владимирович",
-      "avatar": "https://psv4.userapi.com/c909618/u249034701/docs/d21/93a49c9613d5/Kuleshov.jpg?extra=LxGBX0bF_-ckJa9mASvc7MC5-hzSBlRLd4taBjeWkyS6zcpYRDAsPY9fasImx35OgEU0_D3cIx37uhj7TIuFzzjSRdlPgzSEWYsk_SIlayAj4ssMWZt8jZ5wZfi4tGgPyJIO-c_ObFPBZZOnwS4jTdc",
-      "description": "Спокойный, уровновешенный и благородный. Ежегодно принимает участие в в ДФМ. Организатор ЧГК."
   },
   {
       "name": "Кирилл Богачев 4ПМ",
