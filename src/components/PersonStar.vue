@@ -1,9 +1,7 @@
 <script>
-import starImage from "@/assets/images/star.png";
-import starImage2 from "@/assets/images/star3.png";
-import starImage3 from "@/assets/images/star4.png";
-import starImage4 from "@/assets/images/star5.png";
-import starImage5 from "@/assets/images/star6.png";
+import starYellowImage from "@/assets/images/star-yellow.png";
+import starGreenImage from "@/assets/images/star-green.png";
+import starPinkImage from "@/assets/images/star-pink.png";
 import {getRandomIntInclusive} from "@/Utils/math.js";
 
 export default {
@@ -31,13 +29,10 @@ export default {
     },
   },
   data() {
-
-  const randomValue = getRandomIntInclusive(0,4);
- 
-  const imgArr = [starImage, starImage2, starImage3, starImage4, starImage5]
+    const imgArr = [starYellowImage, starGreenImage, starPinkImage];
+    const randomValue = getRandomIntInclusive(0, imgArr.length - 1);
     return {
-      starImage:  imgArr[randomValue],
-
+      starImage: imgArr[randomValue],
     };
   },
   computed: {
