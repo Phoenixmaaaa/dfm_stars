@@ -27,10 +27,8 @@ export default {
   methods: {
     async downloadPersons() {
       await axios.get('https://raw.githubusercontent.com/Phoenixmaaaa/dfm_stars/main/persons.json', {
-        headers: {
-          'Cache-Control': 'no-cache',
-          'Pragma': 'no-cache',
-          'Expires': '0',
+        params: {
+          timestamp: new Date().getTime()
         },
       })
           .then(function ({data}) {
