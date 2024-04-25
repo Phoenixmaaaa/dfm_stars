@@ -37,13 +37,19 @@ export default {
       const angle = getRandomIntInclusive(0, 90);
       return `width:${size}px;height:${size}px;rotate:${angle}deg;`
     },
+    popoverWidth: function () {
+      return window.innerWidth < 350 ? 260 : 300;
+    },
+    avatarSize: function () {
+      return window.innerWidth < 350 ? 100 : 120;
+    },
   },
 }
 </script>
 
 <template>
   <div class="person-star">
-    <el-popover :width="300">
+    <el-popover :width="popoverWidth">
       <template #reference>
         <el-image :src="starImage" :style="starImageStyle" class="person-star__star-image" />
       </template>
@@ -51,7 +57,7 @@ export default {
         <p class="person-star__content-name">{{ name }}</p>
         <div class="person-star__content-main">
           <div>
-            <el-avatar :size="120" :src="avatar" shape="square" class="person-star__content-main-avatar" />
+            <el-avatar :size="avatarSize" :src="avatar" shape="square" class="person-star__content-main-avatar" />
           </div>
           <p class="person-star__content-main-description">{{ description }}</p>
         </div>

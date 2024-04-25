@@ -6,8 +6,7 @@ import PersonsStarField from "@/components/PersonsStarField.vue";
   <el-container>
     <el-header>
       <h1 class="app-header">
-        <a target="_blank" class="app-header" href="https://github.com/Phoenixmaaaa/dfm_stars/issues/new/choose">FizMAT</a>
-        <a target="_blank" class="app-header" href="https://github.com/Phoenixmaaaa/dfm_stars/issues/new/choose"> STARS</a>
+        <a target="_blank" class="app-header" href="https://github.com/Phoenixmaaaa/dfm_stars/issues/new/choose">FizMAT STARS</a>
       </h1>
     </el-header>
     <el-main>

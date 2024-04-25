@@ -26,7 +26,13 @@ export default {
   },
   methods: {
     async downloadPersons() {
-      await axios.get('https://raw.githubusercontent.com/Phoenixmaaaa/dfm_stars/main/persons.json')
+      await axios.get('https://raw.githubusercontent.com/Phoenixmaaaa/dfm_stars/main/persons.json', {
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          'Expires': '0',
+        },
+      })
           .then(function ({data}) {
             this.persons = data;
             ElMessage({
