@@ -24,7 +24,17 @@ export default {
   created() {
     this.downloadPersons();
   },
+      mounted() {
+  window.addEventListener("resize", this.handleResize);
+},
+beforeDestroy() {
+  window.removeEventListener("resize", this.handleResize);
+},
   methods: {
+    handleResize() {
+      this.calculatePositionAndSize();
+    },
+
     async downloadPersons() {
       await axios.get('https://raw.githubusercontent.com/Phoenixmaaaa/dfm_stars/main/persons.json', {
         params: {
@@ -57,18 +67,29 @@ export default {
         person.style = this.getStyle(person.position);
       }
     },
-    setRandomPositionAndSize(person) {
-      let iterations = 0;
-      do {
-        const width = window.innerWidth;
-        person.size = getRandomIntInclusive(18, 32);
-        person.position = {
-          left: getRandomIntInclusive(person.size, width - person.size),
-          top: getRandomIntInclusive(person.size, window.innerHeight - person.size),
-        };
-        iterations++;
-      } while (iterations < 500 && detectFirstCircleCollision(person, this.persons));
-    },
+
+
+setRandomPositionAndSize(person) {
+  let iterations = 0;
+  do {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    person.size = getRandomIntInclusive(18, 32);
+    const horizontalMarginRatio = 0.2; 
+    const verticalMarginRatio = 0.2; 
+    const minLeft = windowWidth * horizontalMarginRatio;
+    const maxLeft = windowWidth - windowWidth * horizontalMarginRatio - person.size;
+    const minTop = windowHeight * verticalMarginRatio;
+    const maxTop = windowHeight - windowHeight * verticalMarginRatio - person.size;
+    person.position = {
+      left: getRandomIntInclusive(minLeft, maxLeft),
+      top: getRandomIntInclusive(minTop, maxTop),
+    };
+    iterations++;
+  } while (iterations < 500 && detectFirstCircleCollision(person, this.persons));
+}
+,
+
     getStyle({top, left}) {
       return `position:fixed;top:${top}px;left:${left}px;`;
     },
