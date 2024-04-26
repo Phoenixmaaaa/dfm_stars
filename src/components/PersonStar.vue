@@ -78,38 +78,31 @@ export default {
 .person-star {
   &__star-image {
     animation: fadeIn 2s ease;
-
     @keyframes fadeIn {
       0% {
         opacity: 0;
       }
-
       100% {
         opacity: 1;
       }
     }
-
     &:hover {
       background: radial-gradient(yellow, transparent 70%);
     }
   }
-
   &__content {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
-
     &-name {
       font-weight: bold;
       margin: 0;
     }
-
     &-main {
       display: flex;
       gap: 10px;
       flex-direction: row;
-
       &-description {
         margin: 0;
         padding: 0;

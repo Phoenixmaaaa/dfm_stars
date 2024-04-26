@@ -27,14 +27,13 @@ export default {
   mounted() {
     window.addEventListener("resize", this.handleResize);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener("resize", this.handleResize);
   },
   methods: {
     handleResize() {
       this.calculatePositionAndSize();
     },
-
     async downloadPersons() {
       await axios.get('https://raw.githubusercontent.com/Phoenixmaaaa/dfm_stars/main/persons.json', {
         params: {
@@ -67,8 +66,6 @@ export default {
         person.style = this.getStyle(person.position);
       }
     },
-
-
     setRandomPositionAndSize(person) {
       let iterations = 0;
       do {
@@ -87,9 +84,7 @@ export default {
         };
         iterations++;
       } while (iterations < 500 && detectFirstCircleCollision(person, this.persons));
-    }
-    ,
-
+    },
     getStyle({ top, left }) {
       return `position:fixed;top:${top}px;left:${left}px;`;
     },
@@ -100,8 +95,14 @@ export default {
 <template>
   <div class="persons-star-field">
     <div v-for="item in persons">
-      <person-star v-if="item.size && item.style" :avatar="item.avatar" :name="item.name"
-        :description="item.description" :size="item.size" :style="item.style" />
+      <person-star
+          v-if="item.size && item.style"
+          :avatar="item.avatar"
+          :name="item.name"
+          :description="item.description"
+          :size="item.size"
+          :style="item.style"
+      />
     </div>
   </div>
 </template>
