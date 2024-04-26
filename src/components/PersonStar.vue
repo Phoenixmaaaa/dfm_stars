@@ -1,8 +1,12 @@
 <script>
-import starYellowImage from "@/assets/images/star-yellow.png";
+import starBlueImage from "@/assets/images/star-blue.png";
 import starGreenImage from "@/assets/images/star-green.png";
 import starPinkImage from "@/assets/images/star-pink.png";
-import {getRandomIntInclusive} from "@/Utils/math.js";
+import starRedImage from "@/assets/images/star-red.png";
+import starTurquoiseImage from "@/assets/images/star-turquoise.png";
+import starWhiteImage from "@/assets/images/star-white.png";
+import starYellowImage from "@/assets/images/star-yellow.png";
+import { getRandomIntInclusive } from "@/Utils/math.js";
 
 export default {
   name: 'PersonStar',
@@ -29,7 +33,7 @@ export default {
     },
   },
   data() {
-    const imgArr = [starYellowImage, starGreenImage, starPinkImage];
+    const imgArr = [starYellowImage, starGreenImage, starPinkImage, starBlueImage, starRedImage,starTurquoiseImage, starWhiteImage];
     const randomValue = getRandomIntInclusive(0, imgArr.length - 1);
     return {
       starImage: imgArr[randomValue],
@@ -79,27 +83,33 @@ export default {
       0% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
     }
+
     &:hover {
       background: radial-gradient(yellow, transparent 70%);
     }
   }
+
   &__content {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
+
     &-name {
       font-weight: bold;
       margin: 0;
     }
+
     &-main {
       display: flex;
       gap: 10px;
       flex-direction: row;
+
       &-description {
         margin: 0;
         padding: 0;

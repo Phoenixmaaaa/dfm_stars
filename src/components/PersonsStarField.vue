@@ -1,12 +1,12 @@
 <script>
 import PersonStar from "@/components/PersonStar.vue";
 import axios from "axios";
-import {detectFirstCircleCollision, getRandomIntInclusive} from "@/Utils/math.js";
-import {ElMessage} from "element-plus";
+import { detectFirstCircleCollision, getRandomIntInclusive } from "@/Utils/math.js";
+import { ElMessage } from "element-plus";
 
 export default {
   name: 'PersonsStarField',
-  components: {PersonStar},
+  components: { PersonStar },
   data() {
     return {
       persons: [
@@ -15,7 +15,7 @@ export default {
           name: 'Maria Uzhun',
           description: 'Люблю пуделят',
           size: undefined,
-          position: {left: undefined, top: undefined},
+          position: { left: undefined, top: undefined },
           style: undefined,
         },
       ],
@@ -24,12 +24,12 @@ export default {
   created() {
     this.downloadPersons();
   },
-      mounted() {
-  window.addEventListener("resize", this.handleResize);
-},
-beforeDestroy() {
-  window.removeEventListener("resize", this.handleResize);
-},
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResize);
+  },
   methods: {
     handleResize() {
       this.calculatePositionAndSize();
@@ -41,24 +41,24 @@ beforeDestroy() {
           timestamp: new Date().getTime()
         },
       })
-          .then(function ({data}) {
-            this.persons = data;
-            ElMessage({
-              message: `<strong>${data.length}</strong>`,
-              offset: window.innerHeight / 2,
-              duration: 1500,
-              plain: true,
-              type: 'info',
-              icon: 'StarFilled',
-              dangerouslyUseHTMLString: true,
-            })
-          }.bind(this))
-          .catch(function (err) {
-            console.error('CANNOT DOWNLOAD persons.json', err);
+        .then(function ({ data }) {
+          this.persons = data;
+          ElMessage({
+            message: `<strong>${data.length}</strong>`,
+            offset: window.innerHeight / 2,
+            duration: 1500,
+            plain: true,
+            type: 'info',
+            icon: 'StarFilled',
+            dangerouslyUseHTMLString: true,
           })
-          .finally(function () {
-            this.calculatePositionAndSize();
-          }.bind(this));
+        }.bind(this))
+        .catch(function (err) {
+          console.error('CANNOT DOWNLOAD persons.json', err);
+        })
+        .finally(function () {
+          this.calculatePositionAndSize();
+        }.bind(this));
     },
     calculatePositionAndSize() {
       for (const key in this.persons) {
@@ -69,28 +69,28 @@ beforeDestroy() {
     },
 
 
-setRandomPositionAndSize(person) {
-  let iterations = 0;
-  do {
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-    person.size = getRandomIntInclusive(18, 32);
-    const horizontalMarginRatio = 0.2; 
-    const verticalMarginRatio = 0.2; 
-    const minLeft = windowWidth * horizontalMarginRatio;
-    const maxLeft = windowWidth - windowWidth * horizontalMarginRatio - person.size;
-    const minTop = windowHeight * verticalMarginRatio;
-    const maxTop = windowHeight - windowHeight * verticalMarginRatio - person.size;
-    person.position = {
-      left: getRandomIntInclusive(minLeft, maxLeft),
-      top: getRandomIntInclusive(minTop, maxTop),
-    };
-    iterations++;
-  } while (iterations < 500 && detectFirstCircleCollision(person, this.persons));
-}
-,
+    setRandomPositionAndSize(person) {
+      let iterations = 0;
+      do {
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        person.size = getRandomIntInclusive(18, 32);
+        const horizontalMarginRatio = 0.2;
+        const verticalMarginRatio = 0.2;
+        const minLeft = windowWidth * horizontalMarginRatio;
+        const maxLeft = windowWidth - windowWidth * horizontalMarginRatio - person.size;
+        const minTop = windowHeight * verticalMarginRatio;
+        const maxTop = windowHeight - windowHeight * verticalMarginRatio - person.size;
+        person.position = {
+          left: getRandomIntInclusive(minLeft, maxLeft),
+          top: getRandomIntInclusive(minTop, maxTop),
+        };
+        iterations++;
+      } while (iterations < 500 && detectFirstCircleCollision(person, this.persons));
+    }
+    ,
 
-    getStyle({top, left}) {
+    getStyle({ top, left }) {
       return `position:fixed;top:${top}px;left:${left}px;`;
     },
   },
@@ -100,17 +100,10 @@ setRandomPositionAndSize(person) {
 <template>
   <div class="persons-star-field">
     <div v-for="item in persons">
-      <person-star
-          v-if="item.size && item.style"
-          :avatar="item.avatar"
-          :name="item.name"
-          :description="item.description"
-          :size="item.size"
-          :style="item.style"
-      />
+      <person-star v-if="item.size && item.style" :avatar="item.avatar" :name="item.name"
+        :description="item.description" :size="item.size" :style="item.style" />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
